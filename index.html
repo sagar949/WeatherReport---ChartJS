@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <form>
+            <div class="coordinates">
+                <div class="form-group">
+                    <label for="latitude">Latitude</label>
+                    <input type="text" id="latitude">
+                </div>
+                <p>And</p>
+                <div class="form-group">
+                    <label for="longitude">Longitude</label>
+                    <input type="text" id="longitude">
+                </div>
+            </div>
+            <p>Or</p>
+            <div class="city">
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="button" class="btn" value="Get Forecast">
+            </div>
+        </form>
+    </nav>
+    <section>
+        <h3 class="heading">Weather Forecat for next five days</h3>
+    </section>
+    <section class="chart-section">
+        <div class="isResizable">
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="weatherClient.js"></script>
+    <script src="chart.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+.navbar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: white;
+    height: 3rem;
+
+}
+
+.navbar form .coordinates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .form-group {
+    margin: 2rem;
+}
+
+.navbar .form-group label,
+.navbar .form-group input {
+    margin: 1rem;
+}
+
+.navbar .form-group input {
+    padding: 0.4rem;
+}
+
+.btn {
+    border: none;
+    background: rgb(228, 5, 117);
+    padding: 1rem;
+}
+
+.btn:hover {
+    background: crimson;
+}
+
+section h3 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.chart-section {
+    margin: 2rem;
+}
+
+.chart-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.isResizable {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #d8d8d8;
+    overflow: hidden;
+    /* Not usable in IE */
+    /* resize: both; */
+
+    width: 1100px;
+    height: 550px;
+    min-width: 280px;
+    min-height: 280px;
+    max-width: 1200px;
+    max-height: 600px;
+}
